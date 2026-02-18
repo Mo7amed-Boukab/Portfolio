@@ -1,26 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+@import "../node_modules/tw-animate-css/dist/tw-animate.css";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: #7EACB5;
+  --color-accent-foreground: #ffffff;
+  --color-ring: #7EACB5;
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-sidebar-primary: #7EACB5;
+  --color-sidebar-ring: #7EACB5;
+  --color-chart-1: #7EACB5;
+  --font-sans: "Poppins", sans-serif;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0e0e0e;
+  --accent: #7EACB5;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #0e0e0e;
+  --foreground: #ffffff;
+  --accent: #7EACB5;
+  --border: rgba(255, 255, 255, 0.05);
+  --input: rgba(255, 255, 255, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Hardcoded overrides to be 100% sure */
+.text-accent {
+  color: #7EACB5 !important;
+}
+
+.bg-accent {
+  background-color: #7EACB5 !important;
+}
+
+.border-accent {
+  border-color: #7EACB5 !important;
+}
+
+.text-accent\/10 {
+  color: rgba(126, 172, 181, 0.1) !important;
+}
+
+.bg-accent\/10 {
+  background-color: rgba(126, 172, 181, 0.1) !important;
+}
+
+.grid-lines {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: -1;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .grid-lines {
+    padding: 0 60px;
+  }
+}
+
+.grid-line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--border);
+}
+
+.mask-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.mask-link::after {
+  content: attr(data-hover);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #7EACB5;
+}
+
+.cursor-follower {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
 }
