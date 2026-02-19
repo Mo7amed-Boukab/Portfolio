@@ -16,30 +16,86 @@ export function Resume() {
           Resume
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+        <div className="space-y-32">
+          {/* Education - Grid/Card Layout */}
           <div>
-            <h2 className="text-[14px] font-semibold uppercase tracking-widest text-accent mb-8">Education</h2>
-            <div className="space-y-12">
-              {[1, 2].map((item) => (
-                <div key={item} className="group cursor-default">
-                  <span className="text-foreground/40 text-[13px] font-mono block mb-2">2018 — 2022</span>
-                  <h3 className="text-2xl font-bold mb-1 transition-colors duration-300 group-hover:text-accent">University Name</h3>
-                  <p className="text-foreground/60">Bachelor's Degree in Software Engineering</p>
+            <div className="flex items-center gap-4 mb-12">
+              <h2 className="text-[14px] font-semibold uppercase tracking-widest text-accent">Education</h2>
+              <div className="h-px flex-1 bg-border/50"></div>
+            </div>
+
+            <div className="relative space-y-16 md:space-y-0">
+              {/* Central Timeline Axis */}
+              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-accent/30 md:-translate-x-1/2"></div>
+
+              {/* Item 1 - Left */}
+              <div className="relative flex flex-col md:flex-row md:items-center justify-between">
+                <div className="md:w-[45%] md:text-right pl-10 md:pl-0">
+                  <div className="group p-6 md:p-8 bg-foreground/5 border border-border hover:border-accent transition-all duration-500 relative">
+                    <span className="text-foreground/30 text-[12px] font-mono block mb-2 md:mb-4 uppercase tracking-widest">2024 — 2026</span>
+                    <h3 className="text-lg md:text-xl font-bold mb-2 leading-tight group-hover:text-accent transition-colors">Full Stack Web & Mobile Development</h3>
+                    <p className="text-foreground/60 text-sm">Youcode</p>
+                    {/* Connection Dot */}
+                    <div className="absolute top-1/2 -left-[27px] md:left-auto md:-right-[calc(10%+26px)] w-4 h-4 bg-background border-2 border-accent rounded-full -translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-125"></div>
+                  </div>
                 </div>
-              ))}
+                <div className="md:w-[45%]"></div>
+              </div>
+
+              {/* Item 2 - Right */}
+              <div className="relative flex flex-col md:flex-row md:items-center justify-between md:mt-24">
+                <div className="md:w-[45%]"></div>
+                <div className="md:w-[45%] pl-10 md:pl-0">
+                  <div className="group p-6 md:p-8 bg-foreground/5 border border-border hover:border-accent transition-all duration-500 relative">
+                    <span className="text-foreground/30 text-[12px] font-mono block mb-2 md:mb-4 uppercase tracking-widest">2021 — 2024</span>
+                    <h3 className="text-lg md:text-xl font-bold mb-2 leading-tight group-hover:text-accent transition-colors">B.A. in Business Management & Administration</h3>
+                    <p className="text-foreground/60 text-sm">Souissi Faculty of Law, Economics & Social Sciences</p>
+                    {/* Connection Dot */}
+                    <div className="absolute top-1/2 -left-[27px] md:-left-[calc(11%+2px)] w-4 h-4 bg-background border-2 border-accent rounded-full -translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-125"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Item 3 - Left */}
+              <div className="relative flex flex-col md:flex-row md:items-center justify-between md:mt-24">
+                <div className="md:w-[45%] md:text-right pl-10 md:pl-0">
+                  <div className="group p-6 md:p-8 bg-foreground/5 border border-border hover:border-accent transition-all duration-500 relative">
+                    <span className="text-foreground/30 text-[12px] font-mono block mb-2 md:mb-4 uppercase tracking-widest">2020</span>
+                    <h3 className="text-lg md:text-xl font-bold mb-2 leading-tight group-hover:text-accent transition-colors">High School Diploma in Experimental Sciences</h3>
+                    <p className="text-foreground/60 text-sm">Selouane El hassani High School</p>
+                    {/* Connection Dot */}
+                    <div className="absolute top-1/2 -left-[27px] md:left-auto md:-right-[calc(10%+26px)] w-4 h-4 bg-background border-2 border-accent rounded-full -translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-125"></div>
+                  </div>
+                </div>
+                <div className="md:w-[45%]"></div>
+              </div>
             </div>
           </div>
 
+          {/* Experience - Detailed List Layout */}
           <div>
-            <h2 className="text-[14px] font-semibold uppercase tracking-widest text-accent mb-8">Experience</h2>
-            <div className="space-y-12">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="group cursor-default">
-                  <span className="text-foreground/40 text-[13px] font-mono block mb-2">2022 — Present</span>
-                  <h3 className="text-2xl font-bold mb-1 transition-colors duration-300 group-hover:text-accent">Company Name</h3>
-                  <p className="text-foreground/60">Senior Frontend Developer</p>
+            <div className="flex items-center gap-4 mb-12">
+              <h2 className="text-[14px] font-semibold uppercase tracking-widest text-accent">Professional Experience</h2>
+              <div className="h-px flex-1 bg-border/50"></div>
+            </div>
+
+            <div className="max-w-4xl space-y-16">
+              <div className="group relative pl-0 md:pl-10">
+                {/* Accent line for desktop */}
+                <div className="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-border group-hover:bg-accent transition-colors"></div>
+
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                  <div>
+                    <h3 className="text-2xl font-bold group-hover:text-accent transition-colors">Full Stack Web Developer Intern</h3>
+                    <p className="text-foreground/60 font-medium">Logiciel Lab – Tangier</p>
+                  </div>
+                  <span className="text-accent text-sm font-bold uppercase tracking-widest">May 2025 — July 2025</span>
                 </div>
-              ))}
+
+                <p className="text-foreground/70 leading-relaxed text-lg text-justify md:text-left">
+                  During my internship, I developed a real estate management web application using Laravel, facilitating connections between agents and clients. Key features included property listing management, reservation tracking, and a comprehensive admin dashboard for user and content administration.
+                </p>
+              </div>
             </div>
           </div>
         </div>
