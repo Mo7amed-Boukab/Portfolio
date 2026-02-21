@@ -27,7 +27,7 @@ const skills = [
   { name: "CI/CD", category: "DevOps" },
   { name: "Docker", category: "DevOps" },
   { name: "UML diagrams", category: "Tools" },
-  { name: "Jira", category: "Project Management"},
+  { name: "Jira", category: "Project Management" },
 ];
 
 export const Skills = () => {
@@ -47,13 +47,13 @@ export const Skills = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-7xl font-bold text-foreground tracking-tighter text-center md:text-left"
+            className="text-3xl md:text-6xl font-bold text-foreground tracking-tighter text-center md:text-left"
           >
             My <span className="text-foreground/20 italic">Arsenal.</span>
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -76,8 +76,8 @@ export const Skills = () => {
       </div>
 
       {/* Decorative text in background */}
-      <div className="absolute -bottom-10 -right-10 md:-bottom-20 md:-right-20 pointer-events-none opacity-[0.02] select-none text-right">
-        <h2 className="text-[6rem] md:text-[20rem] font-bold text-foreground leading-none tracking-tighter">
+      <div className="absolute -bottom-6 -right-6 md:-bottom-20 md:-right-20 pointer-events-none opacity-[0.02] select-none text-right">
+        <h2 className="text-[4rem] md:text-[20rem] font-bold text-foreground leading-none tracking-tighter">
           SKILLS
         </h2>
       </div>

@@ -18,7 +18,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ["hero", "skills", "resume", "works", "contact"];
+      const sections = ["hero", "resume", "skills", "works", "contact"];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -36,8 +36,8 @@ const Header = () => {
 
   const navItems = [
     { label: "Home", href: "/#hero" },
-    { label: "Skills", href: "/#skills" },
     { label: "Resume", href: "/#resume" },
+    { label: "Skills", href: "/#skills" },
     { label: "Works", href: "/#works" },
     { label: "Contact", href: "/#contact" },
   ];
@@ -175,7 +175,7 @@ const Header = () => {
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
                     className={cn(
-                      "text-3xl md:text-4xl font-bold uppercase tracking-tighter transition-colors duration-300",
+                      "text-2xl md:text-4xl font-bold uppercase tracking-tighter transition-colors duration-300",
                       activeSection === item.href.replace("#", "") ? "text-accent" : "text-foreground/40 hover:text-foreground"
                     )}
                   >

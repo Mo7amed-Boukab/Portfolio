@@ -9,9 +9,9 @@ import { Contacts } from "@/components/sections/contacts";
 export default function Home() {
   return (
     <div className="pt-20">
-      <Hero />
-      <Skills />
+      <Hero />  
       <Resume />
+      <Skills />
       <Works />
       <Contacts />
     </div>

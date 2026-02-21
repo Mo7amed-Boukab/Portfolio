@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 
 export function Resume() {
   return (
@@ -12,11 +13,36 @@ export function Resume() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: [0.7, 0, 0.3, 1] }}
       >
-        <h1 className="text-[50px] md:text-[120px] font-bold uppercase tracking-tighter leading-none mb-10 text-foreground/10 text-center md:text-left">
+        <h1 className="text-[40px] md:text-[120px] font-bold uppercase tracking-tighter leading-none mb-10 text-foreground/10 text-center md:text-left">
           Resume
         </h1>
 
         <div className="space-y-32">
+          {/* About Me / Introduction Section */}
+          <div className="max-w-4xl">
+            <div className="flex items-center gap-4 mb-12">
+              <h2 className="text-[14px] font-semibold uppercase tracking-widest text-accent">Professional Profile</h2>
+              <div className="h-px flex-1 bg-border/50"></div>
+            </div>
+            <div className="space-y-8">
+              <p className="text-xl md:text-3xl font-medium leading-[1.4] text-foreground/90">
+                Junior Full-Stack Web & Mobile Developer, specialized in designing modern, high-performance, and scalable applications — SaaS platforms, robust APIs, and intuitive interfaces.
+              </p>
+              <p className="text-lg md:text-xl text-foreground/60 leading-relaxed font-light">
+                Passionate about code and driven by solving complex problems, I invest myself in every project with rigor, creativity, and a particular focus on quality and user experience.
+              </p>
+              <div className="pt-4">
+                <a
+                  href="/cv-boukab-mohamed.pdf"
+                  download
+                  className="inline-flex items-center gap-3 bg-accent text-white px-6 py-3 md:px-8 md:py-4 font-bold uppercase tracking-widest text-[12px] md:text-sm hover:bg-foreground hover:text-background transition-all duration-300 group"
+                >
+                  Download CV <Download size={16} className="md:size-[18px] group-hover:translate-y-0.5 transition-transform" />
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Education - Grid/Card Layout */}
           <div>
             <div className="flex items-center gap-4 mb-12">
@@ -92,7 +118,7 @@ export function Resume() {
                   <span className="text-accent text-sm font-bold uppercase tracking-widest">May 2025 — July 2025</span>
                 </div>
 
-                <p className="text-foreground/70 leading-relaxed text-lg text-justify md:text-left">
+                <p className="text-foreground/70 leading-relaxed text-lg md:text-left">
                   During my internship, I developed a real estate management web application using Laravel, facilitating connections between agents and clients. Key features included property listing management, reservation tracking, and a comprehensive admin dashboard for user and content administration.
                 </p>
               </div>

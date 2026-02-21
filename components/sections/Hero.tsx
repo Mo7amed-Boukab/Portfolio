@@ -73,21 +73,21 @@ export default function Hero() {
         {/* Right Aspect: Content */}
         <div className="w-full lg:w-1/2 text-left space-y-8">
           <div className="max-w-[580px]">
-            <h1 className="text-[28px] md:text-[34px] lg:text-[42px] leading-[1.3] font-medium text-foreground">
+            <h1 className="text-[26px] md:text-[34px] lg:text-[42px] leading-[1.2] font-medium text-foreground">
               Hello, I’m <span className="font-bold text-foreground">Mohamed Boukab</span>, <br className="hidden md:block" />
-             <span className="text-accent"> Full stack developer </span>
+              <span className="text-accent"> Full stack developer </span>
             </h1>
           </div>
 
           {/* Typing Animation Section */}
           <div className="relative min-h-[80px] md:min-h-[120px] flex flex-col justify-end">
             <div className="flex items-baseline flex-wrap">
-              <span className="text-[32px] md:text-[64px] lg:text-[72px] font-bold text-foreground leading-tight">
+              <span className="text-[30px] md:text-[64px] lg:text-[72px] font-bold text-foreground leading-tight">
                 {staticPrefixes[loopNum % phrases.length]}
               </span>
-              <span className="text-[32px] md:text-[64px] lg:text-[72px] font-bold text-accent ml-2 md:ml-4 flex items-center leading-tight">
+              <span className="text-[30px] md:text-[64px] lg:text-[72px] font-bold text-accent ml-2 md:ml-4 flex items-center leading-tight">
                 {text}
-                <span className="animate-pulse ml-1 inline-block w-[2px] h-[28px] md:w-[3px] md:h-[55px] lg:h-[65px] bg-accent"></span>
+                <span className="animate-pulse ml-1 inline-block w-[2px] h-[24px] md:w-[3px] md:h-[55px] lg:h-[65px] bg-accent"></span>
               </span>
             </div>
           </div>
