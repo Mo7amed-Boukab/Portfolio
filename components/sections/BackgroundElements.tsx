@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { InteractiveCursor } from "../ui/InteractiveGrid";
 
 const BackgroundElements: React.FC = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -36,7 +37,7 @@ const BackgroundElements: React.FC = () => {
 
   return (
     <>
-      {/* Structural Grid Lines - Exactly 5 columns across the 1440px wide content area */}
+      <InteractiveCursor />
       <div
         className="grid-lines fixed inset-0 pointer-events-none z-[-1]"
       >
@@ -55,28 +56,6 @@ const BackgroundElements: React.FC = () => {
         style={{
           backgroundImage: `url("https://grainy-gradients.vercel.app/noise.svg")`,
           backgroundRepeat: 'repeat'
-        }}
-      />
-
-      {/* Cursor Follower - Styled based on computed_styles and visual reference */}
-      <div
-        className="cursor-follower"
-        style={{
-          position: "fixed",
-          left: `${mousePos.x}px`,
-          top: `${mousePos.y}px`,
-          width: isHovering ? "50px" : "26px",
-          height: isHovering ? "50px" : "26px",
-          marginTop: isHovering ? "-25px" : "-13px",
-          marginLeft: isHovering ? "-25px" : "-13px",
-          backgroundColor: isHovering ? "var(--foreground)" : "var(--accent)",
-          opacity: isHovering ? 0.15 : (isVisible ? 1 : 0),
-          borderRadius: "50%",
-          pointerEvents: "none",
-          zIndex: 1111,
-          transition: "width 0.3s ease, height 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, margin 0.3s ease",
-          mixBlendMode: isHovering ? "difference" : "normal",
-          border: isHovering ? "1px solid var(--border)" : "none"
         }}
       />
 
