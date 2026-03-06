@@ -94,7 +94,9 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
             <div className="flex items-center gap-2 md:gap-3">
               <p className="text-foreground/40 uppercase text-[9px] md:text-[11px] tracking-[0.2em] font-bold">{project.category}</p>
               <div className="w-1 h-1 bg-accent/30 rounded-full" />
-              <p className="text-foreground/30 text-[9px] md:text-[11px] font-mono">{project.tech.slice(0, 3).join(" • ")}</p>
+              <p className="text-foreground/30 text-[9px] md:text-[11px] font-mono leading-tight max-w-[200px] md:max-w-none">
+                {project.tech.slice(0, 6).join(" • ")}
+              </p>
             </div>
           </div>
           <span className="text-foreground/20 font-mono text-xs md:text-sm font-black italic">{project.year}</span>

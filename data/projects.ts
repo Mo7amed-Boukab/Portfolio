@@ -15,9 +15,16 @@ export const projects = [
       "/Eventia-images/profile.png",
       "/Eventia-images/admin-dashboard.png",
       "/Eventia-images/admin-events.png",
-
     ],
     description: "Eventia is a full-stack professional event management platform designed with a premium aesthetic and a refined user experience. It allows users to browse, book, and manage events (conferences, seminars, workshops, and training sessions), featuring JWT/RBAC authentication and automated PDF ticket generation with QR codes. It also integrates a comprehensive analytics dashboard for real-time revenue tracking, attendance statistics, and full management of events and their bookings. Built with NestJS and MongoDB on the backend, and Next.js 16 with React 19 and TailwindCSS on the frontend. The stack also includes TypeScript, Zustand for state management, Framer Motion for animations, Recharts for data visualization, PDFKit for ticket generation, Nodemailer with Handlebars for transactional emails, and Docker with GitHub Actions for containerization and CI/CD.",
+    highlights: [
+      "Secure JWT/RBAC authentication with multi-role access control",
+      "Automated PDF ticket generation with unique QR codes for entry",
+      "Comprehensive analytics dashboard for real-time revenue and attendance tracking",
+      "Automated transactional emails via Nodemailer and Handlebars",
+      "Robust data visualization with Recharts for performance monitoring",
+      "Fully Dockerized architecture with professional CI/CD integration"
+    ],
     tech: ["Next.js", "NestJS", "Typescript", "Tailwind CSS", "MongoDB", "Zustand", "Zod", "JWT", "Nodemailer", "Handlebars", "PDFKit", "QRCode", "Recharts", "framer-motion", "Lucide React", "Jest", "React Testing Library", "Docker", "CI/CD", "ESLint", "Prettier"],
     link: "https://github.com/Mo7amed-Boukab/Eventia",
     live: "https://eventia-web.vercel.app/"
@@ -32,7 +39,7 @@ export const projects = [
       "/E-market-images/register.png",
       "/E-market-images/login.png",
       "/E-market-images/home-page.png",
-       "/E-market-images/products-cards.png",
+      "/E-market-images/products-cards.png",
       "/E-market-images/product-list.png",
       "/E-market-images/product-details.png",
       "/E-market-images/panier.png",
@@ -52,10 +59,18 @@ export const projects = [
       "/E-market-images/seller-create-coupon.png",
       "/E-market-images/seller-statistic.png",
     ],
-    description: "E-Market is a full-stack SaaS marketplace platform designed for scalability, performance, and a seamless multi-vendor experience. It supports three user roles — Admin, Seller, and Buyer. Admins handle global platform management, moderation, and seller validation. Sellers can list products with variants, manage inventory, create discount coupons, and track their orders and revenue. Buyers enjoy a smooth shopping experience with advanced search and filters, verified reviews, wishlists, and secure checkout powered by Stripe. The platform delivers real-time notifications via WebSockets (Socket.io) and transactional emails, keeping all parties instantly informed. It also includes an optimized image processing pipeline, a verified purchase review system, and a robust security layer with JWT authentication, rate limiting, and strict input validation. Built with Node.js, Express, and MongoDB on the backend, React with Redux Toolkit and Zod on the frontend, Socket.io for real-time features, Nodemailer with Handlebars for emails, Sharp for image optimization, and Docker with GitHub Actions for containerization and CI/CD. Testing is covered with Jest and React Testing Library.",
+    description: "E-Market is a full-stack SaaS marketplace platform designed for scalability, performance, and a seamless multi-vendor experience. It supports three user roles — Admin, Seller, and Buyer : Admins handle global platform management, moderation, and seller validation, for Sellers can list products with variants, manage inventory, create discount coupons, and track their orders and revenue, and for Buyers they can enjoy a smooth shopping experience with advanced search and filters, verified reviews, wishlists, and secure checkout powered by Stripe. The platform delivers real-time notifications via WebSockets (Socket.io) and transactional emails, keeping all parties instantly informed, It also includes an optimized image processing pipeline, a verified purchase review system, and a robust security layer with JWT authentication, rate limiting, and strict input validation. Built with Node.js, Express, and MongoDB on the backend, React with Redux Toolkit and Zod on the frontend, Socket.io for real-time features, Nodemailer with Handlebars for emails, Sharp for image optimization, and Docker with GitHub Actions for containerization and CI/CD. Testing is covered with Jest and React Testing Library.",
+    highlights: [
+      "Advanced SaaS marketplace with Admin, Seller, and Buyer role separation",
+      "Secure checkout and payment processing integrated via Stripe",
+      "Real-time notifications and updates using WebSockets (Socket.io)",
+      "Dynamic product management with multi-variants and strict inventory tracking",
+      "Optimized high-performance image processing pipeline with Sharp",
+      "Verified purchase review system and personalized user wishlists"
+    ],
     tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Redux Toolkit", "Zod", "JWT", "Winston & Morgan", "Sharp", "Nodemailer", "Stripe", "WebSocket", "Jest", "React Testing Library", "Docker", "CI/CD"],
-    link: "https://github.com/Mo7amed-Boukab/E-Market-API",
-    live: "https://e-market-web.vercel.app/"
+    link: "https://github.com/Mo7amed-Boukab/E-Market",
+    live: "https://marketplace-online.vercel.app/"
   },
   {
     slug: "ed-academy",
@@ -78,7 +93,15 @@ export const projects = [
       "/Ed-academy-images/mobile-dashboard-1.png",
       "/Ed-academy-images/mobile-dashboard-2.png",
     ],
-    description: "ED Academy is a full-stack school attendance management system designed to simplify and centralize student tracking for educational institutions. It supports three user roles — Admin, Teacher, and Student. Admins manage users, classes, subjects, and monitor attendance across the entire platform. Teachers create sessions, take attendance, manage absence justifications, and track their assigned classes. Students can view their personal attendance history, weekly schedule, and absence calendar with justification details. Each role benefits from a personalized dashboard with key statistics and visual charts, offering a clear and intuitive experience. The platform is fully Dockerized and deployed on Render. Built with Node.js, Express 5, and PostgreSQL with Prisma ORM on the backend, React 19 with TypeScript and TailwindCSS on the frontend, JWT for authentication and role-based access control, Winston for logging, and Docker for containerization and deployment.",
+    description: "ED Academy is a full-stack school attendance management system designed to simplify and centralize student tracking for educational institutions. It supports three user roles — Admin, Teacher, and Student: Admins manage users, classes, subjects, and monitor attendance across the entire platform, For Teachers create sessions, take attendance, manage absence justifications, and track their assigned classes, For Students they can view their personal attendance history, weekly schedule, and absence calendar with justification details, and each role benefits from a personalized dashboard with key statistics and visual charts, offering a clear and intuitive experience. Built with Node.js, Express 5, and PostgreSQL with Prisma ORM on the backend, React 19 with TypeScript and TailwindCSS on the frontend, JWT for authentication and role-based access control, Winston for logging, and Docker for containerization and deployed on Render.",
+    highlights: [
+      "Centralized school attendance tracking for Admins, Teachers, and Students",
+      "Role-specific dashboards with interactive statistics and visual charts",
+      "Personalized student attendance history and absence justification system",
+      "Teacher-driven session creation and automated absence calendar tracking",
+      "Robust data management using PostgreSQL with Prisma ORM",
+      "Professional containerized deployment with Docker on Render"
+    ],
     tech: ["React", "Tailwind CSS", "Typescript", "Node.js", "Express", "PostgreSQL", "Prisma ORM", "Winston", "JWT", "Docker"],
     link: "https://github.com/Mo7amed-Boukab/ED-Academy",
     live: "https://ed-academy.onrender.com/"
@@ -106,8 +129,15 @@ export const projects = [
       "/QuickQuiz-images/register.png",
       "/QuickQuiz-images/login.png",
     ],
-
-    description: "QuickQuiz is a modern and interactive quiz platform for web development, designed to help developers test their knowledge, track their progress, and master various technologies. It supports two user roles — Admin and User. Admins manage quizzes, questions, themes, difficulty levels, and users, with access to a full analytics dashboard and data export. Users can take timed quizzes, practice in a pressure-free mode, view their performance history, and compete on a global leaderboard. The platform comes with an extensive question bank covering a wide range of technologies, from frontend (React, Vue, Angular, Next.js) and backend (Node.js, NestJS, Django, Spring Boot) to databases and DevOps. Fully Dockerized and deployed. Built with React 19 and TailwindCSS on the frontend, Node.js, Express, and MongoDB with Mongoose on the backend, and JWT for secure authentication.",
+    description: "QuickQuiz is a modern and interactive quiz platform for web development, designed to help developers test their knowledge, track their progress, and master various technologies. It supports two user roles — Admin and User; Admins manage quizzes, questions, themes, difficulty levels, and users, with access to a full analytics dashboard and data export, For users they can take timed quizzes, practice in a pressure-free mode, view their performance history, and compete on a global leaderboard. The platform comes with an extensive question bank covering a wide range of technologies, from frontend (React, Vue, Angular, Next.js) and backend (Node.js, NestJS, Django, Spring Boot) to databases and DevOps, and it's fully Dockerized and deployed. Built with React 19 and TailwindCSS on the frontend, Node.js, Express, and MongoDB with Mongoose on the backend, and JWT for secure authentication.",
+    highlights: [
+      "Interactive technical quiz platform with timed and practice modes",
+      "Extensive question bank covering multiple frontend and backend stacks",
+      "Admin panel for comprehensive content, theme, and user management",
+      "Real-time performance tracking with global leaderboard and badges",
+      "Data export functionality and detailed analytics for quiz performance",
+      "Responsive design optimized for both desktop and mobile users"
+    ],
     tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Docker"],
     link: "https://github.com/Mo7amed-Boukab/QuickQuiz",
     live: "https://quickquiz-app.onrender.com/"
