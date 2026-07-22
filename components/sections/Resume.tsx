@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
 
 export function Resume() {
   return (
@@ -31,15 +30,6 @@ export function Resume() {
               <p className="text-lg md:text-xl text-foreground/60 leading-relaxed font-light">
                 Passionate about code and driven by solving complex problems, I invest myself in every project with rigor, creativity, and a particular focus on quality and user experience.
               </p>
-              <div className="pt-4">
-                <a
-                  href="/cv-boukab-mohamed.pdf"
-                  download
-                  className="inline-flex items-center gap-3 bg-accent text-white px-6 py-3 md:px-8 md:py-4 font-bold uppercase tracking-widest text-[12px] md:text-sm hover:bg-foreground hover:text-background transition-all duration-300 group"
-                >
-                  Download CV <Download size={16} className="md:size-[18px] group-hover:translate-y-0.5 transition-transform" />
-                </a>
-              </div>
             </div>
           </div>
 

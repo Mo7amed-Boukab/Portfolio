@@ -65,19 +65,6 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
             )}
           </AnimatePresence>
 
-          {/* Progress Indicator */}
-          {images.length > 1 && (
-            <div className="absolute bottom-0 left-0 right-0 h-[2px] md:h-[3px] bg-foreground/5 z-20">
-              <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                key={currentImage}
-                transition={{ duration: 4.5, ease: "linear" }}
-                className="h-full bg-accent origin-left"
-              />
-            </div>
-          )}
-
           {/* Reveal Overlay - Adjusted for better mobile tap feedback */}
           <div className="absolute inset-0 flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transition-all duration-500">
             <div className="bg-background/40 backdrop-blur-md border border-white/5 w-full h-full flex items-center justify-center">
