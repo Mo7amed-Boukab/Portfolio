@@ -111,6 +111,37 @@ export const projects = [
     link: "https://github.com/Mo7amed-Boukab/InvoiceFlow"
   },
   {
+    slug: "pharmamanager",
+    title: "PharmaManager",
+    category: "Healthcare & Pharmacy",
+    year: "2026",
+    image: "/PharmaManager_Photos/screencapture-pharma-manager-sigma-vercel-app-login-2026-03-15-13_27_42.png",
+    gallery: [
+      "/PharmaManager_Photos/screencapture-pharma-manager-sigma-vercel-app-register-2026-03-15-13_27_57.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 150413.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 150436.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 163905.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 163928.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 163956.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 164019.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 164043.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 164510.png",
+      "/PharmaManager_Photos/Capture d'écran 2026-03-15 164544.png",
+    ],
+    description: "PharmaManager is a full-stack pharmacy management web application designed to streamline inventory tracking, sales operations, and business analytics through a comprehensive dashboard. The backend is powered by Django REST Framework and PostgreSQL, featuring a fully documented RESTful API via Swagger, automated low-stock alerts, price snapshot preservation at the point of sale, and intelligent stock reintegration on sale cancellation. The frontend is built with React and TypeScript using TanStack React Query for efficient server-state management, along with CSV data export, advanced filtering capabilities, and secure JWT-based authentication. The entire application is containerized and served through a Docker and Nginx infrastructure.",
+    highlights: [
+      "Full inventory management with automated low-stock alerts and real-time tracking",
+      "Price snapshots at point of sale with stock reintegration on cancellation",
+      "Fully documented RESTful API using Swagger for seamless integration",
+      "Advanced filtering, CSV export, and analytical dashboard for business insights",
+      "Secure JWT authentication with role-based access control",
+      "Production-grade Docker and Nginx containerized infrastructure"
+    ],
+    tech: ["React.js", "TypeScript", "Python", "Django", "PostgreSQL", "TanStack React Query", "JWT", "Swagger", "Docker", "Nginx"],
+    link: "https://github.com/Mo7amed-Boukab/pharma-manager",
+    live: "https://pharma-manager-sigma.vercel.app"
+  },
+  {
     slug: "ed-academy",
     title: "ED-Academy",
     category: "EdTech",
